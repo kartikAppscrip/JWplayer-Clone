@@ -1,5 +1,4 @@
 import React from "react";
-import SearchIcon from "@mui/icons-material/Search";
 import "../Css/Header.css";
 import jwpIcon from "../images/jwpIcon.png"; // Tell webpack this JS file uses this image
 
@@ -50,9 +49,9 @@ function Header() {
             </ul>
             <form className="d-flex" role="search">
               <div className="form-control me-2 bg-dark border-opacity-0">
-                <div>
+                {/* <div>
                   <SearchIcon className="text-light" />
-                </div>
+                </div> */}
                 <input
                   type="search"
                   placeholder="Search.."
