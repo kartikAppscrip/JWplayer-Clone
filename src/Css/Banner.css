@@ -1,0 +1,14 @@
+.imageTransition:hover {
+  transition: ease;
+  z-index: 10;
+  transform: scale(1.05);
+  /* transition: opacity 0.3s ease-out;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transition-property: opacity; */
+}
+
+.image:hover {
+  border: 2px solid #fff;
+}

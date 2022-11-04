@@ -6,9 +6,9 @@ import jwpIcon from "../images/jwpIcon.png"; // Tell webpack this JS file uses t
 function Header() {
   return (
     <div className="Header">
-      <nav className="navbar navbar-expand-lg h-25">
+      <nav className="navbar navbar-expand-lg h-25 navbar-dark">
         <div className="container-fluid">
-          <div>
+          <div style={{ display: "flex" }}>
             <img src={jwpIcon} alt="eror" className="jwpIcon" />
             <p className="navbar-brand m-0" href="#">
               JWP
@@ -49,21 +49,20 @@ function Header() {
               </li>
             </ul>
             <form className="d-flex" role="search">
-              <div className="form-control me-2">
+              <div className="form-control me-2 bg-dark border-opacity-0">
                 <div>
-                  <SearchIcon />
+                  <SearchIcon className="text-light" />
                 </div>
                 <input
                   type="search"
                   placeholder="Search.."
-                  aria-label="Search"
-                  className="searchInput"
+                  className="searchInput bg-dark fw-bold border-0 text-light"
                 />
               </div>
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-dark" type="submit">
                 Sign In
               </button>
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-light" type="submit">
                 Sign Up
               </button>
             </form>
